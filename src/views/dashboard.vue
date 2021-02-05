@@ -1,11 +1,15 @@
 <template>
 	<div>
-		<Nav/>
-		<div class="row no-gutters">
-			<div class="col-2 text-center bg-sidebar" style="height:100vh">
+		<div class="row no-gutters d-none d-md-block">
+			<div class="col-2 text-center bg-sidebar position-fixed h-100">
 				<Sidebar/>
 			</div>
-			<div class="col-10 px-3">
+		</div>
+		<div class="py-3 d-block d-md-none bg-sidebar w-100">
+			<Sidebar/>
+		</div>
+		<div class="row no-gutters justify-content-end">
+			<div class="col-12 col-md-10 px-md-3 py-0">
 				<router-view></router-view>
 			</div>
 		</div>
@@ -13,11 +17,9 @@
 </template>
 
 <script>
-import Nav from '../components/nav';
 import Sidebar from '../components/manage_sidebar';
 export default {
 	components:{
-		Nav,
 		Sidebar
 	},
 	created() {

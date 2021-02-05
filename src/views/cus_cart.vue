@@ -1,7 +1,6 @@
 <template>
   <div>
     <loading :active.sync="isLoading"></loading>
-    <Nav />
     <div class="container">
       <h2 class="py-5">我的購物車</h2>
       <div class="row">
@@ -42,7 +41,7 @@
 
         <div class="col-12 py-5">
           <div class="row no-gutters justify-content-center">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <p>有優惠券嗎？</p>
               <div class="input-group mb-3 input-group-sm">
                 <input type="text" class="form-control" placeholder="請輸入優惠碼" v-model="couponCode.code">
@@ -59,7 +58,7 @@
         <div class="col-12">
           <form class="needs-validation" @submit.prevent="order" novalidate>
             <div class="form-row mx-0 justify-content-center">
-              <div class="col-8 mb-3">
+              <div class="col-md-8 col-12 mb-3">
                 <label for="">收件人姓名</label>
                 <input
                   type="text"
@@ -70,7 +69,7 @@
                 <div class="invalid-feedback">格式錯誤</div>
               </div>
 
-              <div class="col-8 mb-3">
+              <div class="col-md-8 col-12 mb-3">
                 <label for="">收件人電話</label>
                 <input
                   type="text"
@@ -81,7 +80,7 @@
                 <div class="invalid-feedback">格式錯誤</div>
               </div>
 
-              <div class="col-8 mb-3">
+              <div class="col-md-8 col-12 mb-3">
                 <label for="">收件人信箱</label>
                 <input
                   type="email"
@@ -92,7 +91,7 @@
                 <div class="invalid-feedback">格式錯誤</div>
               </div>
 
-              <div class="col-8 mb-3">
+              <div class="col-md-8 col-12 mb-3">
                 <label for="">收件人地址</label>
                 <input
                   type="text"
@@ -103,13 +102,13 @@
                 <div class="invalid-feedback">格式錯誤</div>
               </div>
 
-              <div class="col-8 mb-3">
+              <div class="col-md-8 col-12 mb-3">
                 <label for="comment">留言</label>
                 <textarea name="" id="comment" class="form-control" v-model="form.message" cols="30" rows="10"></textarea>
                 <div class="invalid-feedback">格式錯誤</div>
               </div>
 
-              <div class="col-8 mb-3 text-right">
+              <div class="col-md-8 col-12 mb-3 text-right">
                 <button class="btn btn-content">送出訂單</button>
               </div>
             </div>
@@ -123,14 +122,12 @@
 </template>
 
 <script>
-import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Sidebar from "../components/cus_cart_sidebar";
 
 
 export default {
   components: {
-    Nav,
     Sidebar,
     Footer,
   },

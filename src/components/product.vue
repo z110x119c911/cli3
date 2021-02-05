@@ -41,13 +41,13 @@
     transition: 0.5s all;
   }
   .product_person_bg::after{
-    background: url('../assets/person.jpg') 0 / cover ;
+    background: url('../assets/img/person.jpg') 0 / cover ;
   }
   .product_business_bg::after{
-    background: url('../assets/business.jpg') 0 / cover ;
+    background: url('../assets/img/business.jpg') 0 / cover ;
   }
   .product_food_bg::after{
-    background: url('../assets/food.jpg') 0 / cover ;
+    background: url('../assets/img/food.jpg') 0 / cover ;
   }
   .product_person_bg::after , .product_business_bg::after , .product_food_bg::after{
     content: "";

@@ -4,7 +4,7 @@
     <div class="row no-gutters py-3 justify-content-center">
       <form class="needs-validation" novalidate>
         <div class="form-row mx-0 justify-content-center">
-          <div class="col-8 mb-3">
+          <div class="col-md-8 col-10 mb-3">
             <label for="">姓名</label>
             <input
             v-model="contact.Name"
@@ -14,7 +14,7 @@
             />
             <div class="invalid-feedback">格式錯誤</div>
           </div>
-          <div class="col-8 mb-3">
+          <div class="col-md-8 col-10 mb-3">
             <label for="">電話</label>
             <input
             v-model="contact.Phone"
@@ -24,7 +24,7 @@
             />
             <div class="invalid-feedback">格式錯誤</div>
           </div>
-          <div class="col-8 mb-3">
+          <div class="col-md-8 col-10 mb-3">
             <label for="">信箱</label>
             <input
             v-model="contact.mail"
@@ -34,7 +34,7 @@
             />
             <div class="invalid-feedback">格式錯誤</div>
           </div>
-          <div class="col-8 mb-3">
+          <div class="col-md-8 col-10 mb-3">
             <label for="">標題</label>
             <input
             v-model="contact.Title"
@@ -44,7 +44,7 @@
             />
             <div class="invalid-feedback">格式錯誤</div>
           </div>
-          <div class="col-8 mb-3">
+          <div class="col-md-8 col-10 mb-3">
             <label for="validationTextarea">留言</label>
             <textarea class="form-control" id="validationTextarea"
             v-model="contact.Content"
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="row no-gutters justify-content-center">
-          <div class="col-8 text-right">
+          <div class="col-md-8 col-10 text-right">
             <button class="btn btn-primary" type="submit" @click="sendmail()">送出</button>
           </div>
         </div>

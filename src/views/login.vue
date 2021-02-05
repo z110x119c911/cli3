@@ -1,13 +1,12 @@
 <template>
     <div>
-			<Nav/>
 			<ul class="nav justify-content-end">
 				<li class="nav-item">
 					<a class="nav-link text-nav" href="#" @click.prevent="userlogout()">登出</a>
 				</li>
 			</ul>
-			<div class="row justify-content-center">
-				<div class="col-4 pt-5">
+			<div class="row no-gutters justify-content-center">
+				<div class="col-8 col-md-4 pt-5">
 					<form class="needs-validation" @submit.prevent="userLogin" novalidate>
 						<div class="text-center mb-4">
 							<h1 class="h3 mb-3 font-weight-normal">登入</h1>
@@ -35,11 +34,7 @@
 </template>
 
 <script>
-import Nav from '../components/nav';
 export default {
-	components:{
-		Nav
-	},
 	data(){
 		return{
 			user:{

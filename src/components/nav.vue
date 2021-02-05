@@ -1,10 +1,8 @@
 <template>
     <div>
-			<nav class="navbar navbar-expand-lg py-3 nav_sec bg-dark sticky-top">
+			<nav class="navbar navbar-expand-lg nav_sec bg-content sticky-top w-100 p-0" style="position:fixed">
 				<div class="container">
-					<a class="navbar-brand d-flex align-items-center text-white" href="#">
-						工作室
-					</a>
+					<router-link to="/" class="navbar-brand d-flex align-items-center text-white"><img :src="logo" width="140" alt=""></router-link>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="text-white"><i class="fas fa-bars"></i></span>
 					</button>
@@ -37,10 +35,10 @@
 
 <script>
 export default {
-    data(){
-        return{
-
-        }
-    },
+	data(){
+		return{
+			logo:require('../assets/img/logo.png')
+		}
+	},
 }
 </script>

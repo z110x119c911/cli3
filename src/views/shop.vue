@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav/>
     <div class="row py-5 no-gutters justify-content-center">
       <div class="col-md-10">
         <div class="row no-gutters">
@@ -47,12 +46,10 @@
 
 <script>
 
-import Nav from '../components/nav';
 import Footer from '../components/footer';
 import $ from 'jquery';
 export default {
   components:{
-    Nav,
     Footer,
   },
   data() {

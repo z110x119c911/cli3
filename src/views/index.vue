@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Nav/>
-
     <Header/>
 
     <About/>
@@ -22,7 +20,6 @@
 
 
 <script>
-import Nav from '../components/nav.vue'
 import Header from '../components/header.vue';
 import About from '../components/about.vue';
 import Banner from '../components/banner.vue';
@@ -32,7 +29,6 @@ import Contact from '../components/contact.vue';
 
 export default {
   components:{
-    Nav,
     Header,
     About,
     Banner,

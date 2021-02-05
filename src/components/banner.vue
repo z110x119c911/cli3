@@ -9,7 +9,7 @@
 
 <style scoped>
 	.main_Img{
-    background: url('../assets/main_bg1.jpg');
+    background: url('../assets/img/main_bg1.jpg');
 		background-size: cover;
     background-position: bottom center;
     background-attachment: fixed;

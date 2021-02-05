@@ -1,8 +1,8 @@
 <template>
   <div>
 		<div class="parallaxy_container">
-			<h1 class="parallax-title d-none d-md-block">細膩捕捉每一個動人時刻<br>豐富您的生活</h1>
-			<h1 class="parallax-title d-block d-md-none h3">細膩捕捉每一個動人時刻<br>豐富您的生活</h1>
+			<h1 class="parallax-title d-none d-md-block h2">細膩捕捉每一個動人時刻<br>豐富您的生活</h1>
+			<h1 class="parallax-title d-block d-md-none h3 pt-5">細膩捕捉每一個動人時刻<br>豐富您的生活</h1>
 			<VueParallaxy><div class="headerImg h-100" :speed-factor="0.5"></div></VueParallaxy>
 		</div>
   </div>
@@ -10,7 +10,7 @@
 
 <style scoped>
   .headerImg{
-    background: url('../assets/header12.jpg');
+    background: url('../assets/img/header12.jpg');
 		background-size: cover;
 		background-position: bottom center;
 	}

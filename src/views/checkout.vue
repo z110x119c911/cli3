@@ -1,7 +1,6 @@
 <template>
   <div>
 		<loading :active.sync="isLoading"></loading>
-		<Nav/>
     <div class="my-5 row justify-content-center">
 			<form class="col-md-6" @submit.prevent="payOrder">
 				<table class="table">
@@ -47,7 +46,7 @@
 							<th>付款狀態</th>
 							<td>
 								<span v-if="orderList.is_paid === false">尚未付款</span>
-								<span v-else>付款完成</span>
+								<span v-else class="text-success">付款完成</span>
 							</td>
 						</tr>
 					</tbody>
@@ -62,12 +61,10 @@
 </template>
 
 <script>
-import Nav from '../nav';
-import Footer from '../footer';
-import $ from 'jquery';
+import Footer from '../components/footer';
+
 export default {
 	components:{
-    Nav,
     Footer,
   },
   data() {
@@ -91,7 +88,15 @@ export default {
 			});
 		},
 		payOrder(){
-
+			const vm = this;
+			const api = `${process.env.VUE_APP_API_PATH}/api/${process.env.VUE_APP_CUSTOMPATH}/pay/${vm.orderId}`;
+			vm.isLoading = true;
+			this.$http.post(api).then((response) => {
+				vm.isLoading = false;
+				vm.$router.push('/');
+				vm.getOrder();
+				console.log(response.data);
+			});
 		}
 	},
 	created() {

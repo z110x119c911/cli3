@@ -17,13 +17,13 @@
 					</div>
 					<div class="col-12 col-md-7 d-flex align-items-end justify-content-end">
 						<a class="p-1" href="">
-							<img src="../assets/facebook(48x48).svg" width="30" alt="">
+							<img src="../assets/img/facebook(48x48).svg" width="30" alt="">
 						</a>
 						<a class="p-1" href="">
-							<img src="../assets/twitter(48x48).svg" width="30" alt="">
+							<img src="../assets/img/twitter(48x48).svg" width="30" alt="">
 						</a>
 						<a class="p-1" href="">
-							<img src="../assets/googleplus(48x48).svg" width="30" alt="">
+							<img src="../assets/img/googleplus(48x48).svg" width="30" alt="">
 						</a>
 					</div>
 				</div>

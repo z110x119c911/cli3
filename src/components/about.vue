@@ -1,8 +1,8 @@
 <template>
   <div>
 		<div class="row no-gutters">
-			<div class="col-md-6">
-				<img class="img-fluid w-100" src="../assets/about.jpg" alt="">
+			<div class="col-md-6 d-none d-md-block">
+				<img class="img-fluid w-100" src="../assets/img/about.jpg" alt="">
 			</div>
 			<div class="col-md-6">
 				<div class="mt-5 px-4">
@@ -12,6 +12,7 @@
 						at quam recusandae animi cum ab obcaecati omnis neque! Accusamus, possimus corporis cum 
 						aliquid qui totam aut obcaecati esse quisquam ab fugit iure autem repudiandae minima placeat 
 						laudantium.</p>
+					<router-link to="/portfolio#business">首頁</router-link>
 				</div>
 			</div>
 		</div>
